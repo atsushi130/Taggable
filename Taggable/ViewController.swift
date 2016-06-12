@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
        
-        self.taggableView = TaggableView(frame: CGRectMake(5.0, 20.0, self.view.frame.width, self.view.frame.height - 20.0), delegate: self, dataSource: self)
+        self.taggableView = TaggableView(frame: CGRectMake(5.0, 270.0, self.view.frame.width, self.view.frame.height - 270.0), delegate: self, dataSource: self)
         self.taggableView.taggableField.placeholder = "new tag"
         self.taggableView.reloadData()
         self.taggableView.taggableField.becomeFirstResponder()
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     }
 
     override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+        super.didReceiveMemoryWarning( )
         // Dispose of any resources that can be recreated.
     }
 

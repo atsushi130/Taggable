@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-private let TaggableHeight: CGFloat       = 30.0
+private let TaggableHeight: CGFloat       = 20.0
 private let TaggableHeightMargin: CGFloat = 5.0
 private let TaggableWidthMargin: CGFloat  = 2.5
 private let TaggableFieldHeight: CGFloat  = TaggableHeight
@@ -99,7 +99,7 @@ class TaggableView: UIControl {
                     origin.y += TaggableHeight + TaggableHeightMargin
                 }
                 
-                let width      = min(TaggableMaxWidth, size.width + 37)
+                let width      = min(TaggableMaxWidth, size.width + 42)
                 taggable.frame = CGRectMake(origin.x, origin.y, width, TaggableHeight)
                 origin.x += taggable.frame.width + TaggableWidthMargin
                 taggable.autoresizingMask = UIViewAutoresizing.None
