@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="Taggable" id="elc-P8-OnA" customClass="Taggable" customModule="Taggable" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krE-yC-Nb2">
+                    <rect key="frame" x="5" y="0.0" width="113" height="30"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Kx-qf-P9Q">
+                    <rect key="frame" x="123" y="3" width="24" height="24"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="Zhf-P1-Qrk"/>
+                        <constraint firstAttribute="height" constant="24" id="aqU-DS-LsJ"/>
+                    </constraints>
+                    <state key="normal" title="✕">
+                        <color key="titleColor" red="0.14509803921568629" green="0.14509803921568629" blue="0.14509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="remove:" destination="elc-P8-OnA" eventType="touchUpInside" id="5ad-hl-aiV"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.21572516025641031" green="0.21572516025641031" blue="0.21572516025641031" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="8Kx-qf-P9Q" firstAttribute="centerY" secondItem="elc-P8-OnA" secondAttribute="centerY" id="2dx-UT-brN"/>
+                <constraint firstItem="krE-yC-Nb2" firstAttribute="leading" secondItem="elc-P8-OnA" secondAttribute="leading" constant="5" id="D8T-zL-cV4"/>
+                <constraint firstItem="8Kx-qf-P9Q" firstAttribute="leading" secondItem="krE-yC-Nb2" secondAttribute="trailing" constant="5" id="J1S-Zc-djy"/>
+                <constraint firstItem="8Kx-qf-P9Q" firstAttribute="top" secondItem="elc-P8-OnA" secondAttribute="top" constant="3" id="Tqs-1d-qIq"/>
+                <constraint firstAttribute="bottom" secondItem="krE-yC-Nb2" secondAttribute="bottom" id="Ude-Dy-UmK"/>
+                <constraint firstItem="krE-yC-Nb2" firstAttribute="top" secondItem="elc-P8-OnA" secondAttribute="top" id="lcb-g5-n7v"/>
+                <constraint firstAttribute="trailing" secondItem="8Kx-qf-P9Q" secondAttribute="trailing" constant="3" id="oxs-3j-sEg"/>
+                <constraint firstAttribute="bottom" secondItem="8Kx-qf-P9Q" secondAttribute="bottom" constant="3" id="pKV-D4-MOL"/>
+                <constraint firstItem="krE-yC-Nb2" firstAttribute="centerY" secondItem="elc-P8-OnA" secondAttribute="centerY" id="txh-sD-aPZ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="15"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Tqs-1d-qIq"/>
+                    <exclude reference="pKV-D4-MOL"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="label" destination="krE-yC-Nb2" id="ajh-3a-hEz"/>
+            </connections>
+            <point key="canvasLocation" x="592" y="294"/>
+        </view>
+    </objects>
+</document>
