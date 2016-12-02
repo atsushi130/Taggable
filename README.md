@@ -76,8 +76,6 @@ Last, Taggable.xib is Taggable design. Let's customize!!
 ## Contact
 
 Atsushi Miyake
- - https://twitter.com/tsushi130
-
 
 ## License (MIT)
 
